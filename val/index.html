@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cajas de Texto Animadas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff;
+        }
+        .navbar {
+            background-color: #a8dadc;
+            overflow: hidden;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: #333;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            background-color: #457b9d;
+            color: white;
+        }
+        .container {
+            padding: 20px;
+            display: flex;
+            justify-content: space-around;
+        }
+        .animated-box {
+            width: 100%;
+            max-width: 300px;
+            padding: 20px;
+            margin: 20px;
+            border: 2px solid #333;
+            text-align: center;
+            background-color: #dda0dd; /* Color morado */
+            transition: transform 0.3s ease-in-out;
+        }
+        .animated-box:hover {
+            transform: scale(1.1);
+        }
+        .image-box {
+            width: 100%;
+            max-width: 300px;
+            padding: 20px;
+            margin: 20px;
+            border: 2px solid #333;
+            text-align: center;
+            background-color: #dda0dd; /* Color morado */
+            transition: transform 0.3s ease-in-out;
+        }
+        .image-box img {
+            width: 100%;
+            height: auto;
+        }
+        .image-box:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#home">Inicio</a>
+        <a href="#about">Acerca de</a>
+        <a href="#contact">Contacto</a>
+    </div>
+    <div class="container">
+        <div class="animated-box">Los gatos son una de las mascotas más populares del mundo.</div>
+        <div class="animated-box">Los gatos tienen cinco dedos en sus patas delanteras, pero solo cuatro en sus patas traseras.</div>
+        <div class="animated-box">Un grupo de gatos se llama clowder.</div>
+    </div>
+    <div class="container">
+        <div class="animated-box">Los gatos pueden girar sus orejas 180 grados.</div>
+        <div class="animated-box">Los gatos duermen entre 12 y 16 horas al día.</div>
+        <div class="animated-box">El gato doméstico más pesado registrado pesaba 21.3 kg.</div>
+    </div>
+    <div class="container">
+        <div class="image-box">
+            <img src="img/gatico.jpg" alt="Gato 1">
+        </div>
+        <div class="image-box">
+            <img src="img/gaticoo.jpg" alt="Gato 2">
+        </div>
+        <div class="image-box">
+            <img src="img/gaticooo.jpg" alt="Gato 3">
+        </div>
+    </div>
+</body>
+</html>
